@@ -1,9 +1,9 @@
 books = ["god killer", "goku life", "100 year truster", "world of one piece", "immortal king"]
-
+bor = []
 def lib():
     while 1:
         print("\n========= Library Menu =========")
-        option = int(input("1. List of the Books\n2. Find the Book\n3. Return the Book\n4. Exit\nEnter The Option: "))
+        option = int(input("1. List of the Books\n2. Find the Book\n3. Return the Book\n4. Exit\n\nEnter The Option: "))
 
         if option == 1:
             print("Collection of books")
@@ -19,6 +19,7 @@ def lib():
             if find == want:
                 print(f"Your Find Book is '{find}'")
                 books.remove(find)
+                bor.append(find)
 
             else:
                 print("Not Available")
@@ -26,14 +27,14 @@ def lib():
             
         elif option == 3:
             return_Book = input("Enter The Return Book Name : ")
-            if return_Book == find :
+            if return_Book in bor :
                 books.append(return_Book)
             print("\nCollection of books :")
             for book in books: print(book) 
             
         elif option == 4:
             print("Your Exit Application")
-            exit
+            break
             
         else:
             print("Your Enter Invalid Option!")
