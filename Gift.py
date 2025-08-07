@@ -21,7 +21,7 @@ if 2000 <= Purches <= 5000:
 elif 5000 <= Purches < 10000:
     print(f"Your gift voucher is 1000 Rs")
 
-elif 10000 <= Purches:
+elif 10000 < Purches:
     print(f"Your gift voucher is 1500 Rs")
 
 else:
