@@ -1,5 +1,4 @@
 import random
-
 def bank():
         balance = 10000
         while 1:
